@@ -70,6 +70,10 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
         url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5") center / cover;
     color: white;
+
+    a.btn {
+        margin-top: 1rem;
+    }
 }
 
 .hero h2 {
@@ -80,15 +84,28 @@ body {
 /* INFO */
 .info {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 1.3rem;
     padding: 40px 20px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .card {
     background: var(--bg);
     border: 1px solid var(--border);
-    padding: 20px;
+    padding: 1.3rem;
     border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-weight: 700;
+    color: var(--primary);
 }
 
 /* CARTA */
@@ -139,23 +156,41 @@ body {
 
 .contact-info {
     border: 1px solid var(--border);
-    padding: 20px;
+    padding: 1.3rem;
     border-radius: 8px;
+}
+
+#contacto a.btn {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1.3rem;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 20px;
+    padding: 1.3rem;
+    margin-top: 2.2rem;
     border-top: 1px solid var(--border);
+    background: var(--bg);
     color: var(--text-muted);
+    font-size: 14px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
-    .info,
+    .info {
+        flex-direction: column;
+        padding: 1.9rem 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
     .contact {
         flex-direction: column;
+        padding: 1.9rem 2.2rem;
     }
 }
