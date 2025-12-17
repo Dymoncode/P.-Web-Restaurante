@@ -1,19 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <title>Cervecería Restaurante Parada y Fonda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
 
+<body class="light">
+
+    <!-- =========================
+     DATOS DEL NEGOCIO
+=========================
+NOMBRE: Cervecería Restaurante Parada y Fonda
+DIRECCIÓN: (ver Google Maps)
+TELÉFONO: +34 600 000 000
+EMAIL: contacto@restaurante.com
+HORARIO: Lun-Dom 13:00 - 23:00
+========================= -->
+
+    <header class="header">
+        <h1>Cervecería Restaurante Parada y Fonda</h1>
+
+        <nav>
+            <a href="#menu">Carta</a>
+            <a href="#contacto">Contacto</a>
+            <button id="themeToggle" class="btn-secondary" aria-label="Cambiar tema">🌙</button>
+        </nav>
     </header>
-    <main>
 
-    </main>
-    <footer>
-        
+    <section class="hero">
+        <h2>Una Experiencia Culinaria Inolvidable</h2>
+        <p>Sabores auténticos en un ambiente único</p>
+        <a href="#menu" class="btn">Ver la carta</a>
+    </section>
+
+    <section class="info">
+        <div class="card">
+            <h3>Menú diario</h3>
+            <p>Platos frescos y de temporada.</p>
+        </div>
+        <div class="card">
+            <h3>Carta completa</h3>
+            <p>Entrantes, principales y postres.</p>
+        </div>
+        <div class="card">
+            <h3>Reservas</h3>
+            <p>Llámanos o escríbenos.</p>
+        </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="menu" id="menu">
+        <h2>Nuestra Carta</h2>
+
+        <div class="menu-category">
+            <h3>Entrantes</h3>
+            <div class="menu-item">
+                <span>Ensalada Mediterránea</span>
+                <span class="price">8,50 €</span>
+            </div>
+            <div class="menu-item">
+                <span>Croquetas caseras</span>
+                <span class="price">7,00 €</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Platos Principales</h3>
+            <div class="menu-item">
+                <span>Paella de marisco</span>
+                <span class="price">16,00 €</span>
+            </div>
+            <div class="menu-item">
+                <span>Solomillo a la parrilla</span>
+                <span class="price">18,50 €</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Postres</h3>
+            <div class="menu-item">
+                <span>Tarta de queso</span>
+                <span class="price">5,50 €</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.505835696696!2d-4.131509862544051!3d40.58524015939915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a3f6f6cff6f%3A0x14ed043fc94c80b6!2sCervecer%C3%ADa%20Restaurante%20Parada%20y%20Fonda!5e0!3m2!1ses!2ses!4v1765993250101!5m2!1ses!2ses"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> Cercedilla, Madrid</p>
+            <p><strong>Teléfono:</strong> +34 600 000 000</p>
+            <p><strong>Email:</strong> contacto@restaurante.com</p>
+            <p><strong>Horario:</strong> Lun-Dom 13:00 - 23:00</p>
+
+            <a class="btn" href="https://www.google.com/maps?q=Cervecería+Restaurante+Parada+y+Fonda" target="_blank">
+                Cómo llegar
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Cervecería Restaurante Parada y Fonda. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

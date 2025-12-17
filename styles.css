@@ -1,0 +1,161 @@
+/* VARIABLES */
+:root {
+    --primary: #d44211;
+    --bg: #f8f6f6;
+    --text: #1b110d;
+    --text-muted: #9a5f4c;
+    --border: #e7d5cf;
+}
+
+body.dark {
+    --bg: #221510;
+    --text: #fcf9f8;
+    --text-muted: #b0a19c;
+    --border: #4a3b36;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.header nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+/* BOTONES */
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary {
+    background: none;
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--text);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5") center / cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* CARTA */
+.menu {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-category h3 {
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.price {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* CONTACTO */
+.contact {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+.contact-info {
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .info,
+    .contact {
+        flex-direction: column;
+    }
+}
