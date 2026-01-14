@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Cervecería Restaurante Parada y Fonda</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+     <script defer src="script.js"></script>
+</head>
+
+<body class="light">
 
   <body class="light">
     <!-- =========================
@@ -19,19 +22,19 @@ HORARIO: Lun-Dom 13:00 - 23:00
 ========================= -->
 
     <header class="header">
-      <h1>Cervecería Restaurante Parada y Fonda</h1>
+        <h1>Cervecería Restaurante Parada y Fonda</h1>
 
-      <nav>
-        <a href="#menu">Carta</a>
-        <a href="#contacto" id="contacto-menu">Contacto</a>
-        <button
-          id="themeToggle"
-          class="btn-secondary"
-          aria-label="Cambiar tema"
-        >
-          🌙
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
-      </nav>
+
+        <nav id="mainNav" class="nav">
+            <a href="#menu">Carta</a>
+            <a href="#contacto">Contacto</a>
+            <button id="themeToggle" class="btn-secondary" aria-label="Cambiar tema">🌙</button>
+        </nav>
     </header>
 
     <section class="hero">
@@ -40,108 +43,97 @@ HORARIO: Lun-Dom 13:00 - 23:00
       <a href="#menu" class="btn">Ver la carta</a>
     </section>
 
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <h2>Bienvenidos a Parada y Fonda</h2>
+        <p>En nuestra cervecería restaurante encontrarás un espacio acogedor donde disfrutar de la mejor gastronomía local.
+        Ubicados en el corazón de Cercedilla, te ofrecemos platos elaborados con productos frescos y de temporada,
+        combinando tradición y creatividad en cada receta.</p>
+        <p>Nuestro compromiso es brindarte una experiencia gastronómica única,
+        con un servicio cercano y un ambiente familiar que te hará sentir como en casa.</p>
+    </section>
+
     <section class="info">
-      <div class="card">
-        <h3>Menú diario</h3>
-        <p>Platos frescos y de temporada.</p>
-      </div>
-      <div class="card">
-        <h3>Carta completa</h3>
-        <p>Entrantes, principales y postres.</p>
-      </div>
-      <div class="card">
-        <h3>Reservas</h3>
-        <p>Llámanos o escríbenos.</p>
-      </div>
+        <a href="#menu-diario" class="card-link">
+            <div class="card">
+                <h3>Menú diario</h3>
+                <p>Platos frescos y de temporada.</p>
+            </div>
+        </a>
+        <a href="#menu" class="card-link">
+            <div class="card">
+                <h3>Carta completa</h3>
+                <p>Entrantes, principales y postres.</p>
+            </div>
+        </a>
+        <a href="#contacto" class="card-link">
+            <div class="card">
+                <h3>Reservas</h3>
+                <p>Llámanos o escríbenos.</p>
+            </div>
+        </a>
+    </section>
+
+    <!-- MENÚ DIARIO -->
+    <section class="menu-diario" id="menu-diario">
+        <h2>Menú Diario</h2>
+        <p class="menu-subtitle" id="menuDescripcion"></p>
+        <div class="menu-daily-grid" id="menuDiarioContainer"></div>
     </section>
 
     <!-- CARTA -->
     <section class="menu" id="menu">
-      <h2>Nuestra Carta</h2>
-
-      <div class="menu-category">
-        <h3>Entrantes</h3>
-        <div class="menu-item">
-          <span>Ensalada Mediterránea</span>
-          <span class="price">8,50 €</span>
-        </div>
-        <div class="menu-item">
-          <span>Croquetas caseras</span>
-          <span class="price">7,00 €</span>
-        </div>
-      </div>
-
-      <div class="menu-category">
-        <h3>Platos Principales</h3>
-        <div class="menu-item">
-          <span>Paella de marisco</span>
-          <span class="price">16,00 €</span>
-        </div>
-        <div class="menu-item">
-          <span>Solomillo a la parrilla</span>
-          <span class="price">18,50 €</span>
-        </div>
-      </div>
-
-      <div class="menu-category">
-        <h3>Postres</h3>
-        <div class="menu-item">
-          <span>Tarta de queso</span>
-          <span class="price">5,50 €</span>
-        </div>
-      </div>
+        <h2>Nuestra Carta</h2>
+        <p class="menu-description">Desde nuestras famosas tapas hasta los platos principales más elaborados, cada bocado es una celebración de la cocina mediterránea. Explora todos nuestros platos y déjate seducir por una experiencia gastronómica única.</p>
+        <div id="cartaContainer"></div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO -->
-    <section class="hidden contact" id="formulario">
-      <form action="" method="post" class="hidden">
-        <label for="nombre">Nombre</label><br />
-        <input type="text" /><br />
-        <label for="email">Email</label><br />
-        <input type="text" /><br />
-        <label for="mensaje">Mensaje</label><br />
-        <textarea
-          name=""
-          id=""
-          placeholder="Quisiera información acerca de..."
-        ></textarea
-        ><br />
-        <input type="submit" value="Enviar mensaje" class="btn" id="enviar" />
-      </form>
-    </section>
+    <!-- MAPA -->
+    <section class="info-map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.505835696696!2d-4.131509862544051!3d40.58524015939915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a3f6f6cff6f%3A0x14ed043fc94c80b6!2sCervecer%C3%ADa%20Restaurante%20Parada%20y%20Fonda!5e0!3m2!1ses!2ses!4v1765993250101!5m2!1ses!2ses"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
-    <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.505835696696!2d-4.131509862544051!3d40.58524015939915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a3f6f6cff6f%3A0x14ed043fc94c80b6!2sCervecer%C3%ADa%20Restaurante%20Parada%20y%20Fonda!5e0!3m2!1ses!2ses!4v1765993250101!5m2!1ses!2ses"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      >
-      </iframe>
-
-      <div class="contact-info">
+         <!-- INFORMACIÓN -->
+    <div class="informacion">
+        <h2>Información</h2>
         <p><strong>Dirección:</strong> Cercedilla, Madrid</p>
         <p><strong>Teléfono:</strong> +34 600 000 000</p>
         <p><strong>Email:</strong> contacto@restaurante.com</p>
-        <p><strong>Horario:</strong> Lun-Dom 13:00 - 23:00</p>
-
-        <a
-          class="btn"
-          href="https://www.google.com/maps?q=Cervecería+Restaurante+Parada+y+Fonda"
-          target="_blank"
-        >
-          Cómo llegar
+        <a class="btn" href="https://www.google.com/maps?q=Cervecería+Restaurante+Parada+y+Fonda" target="_blank">
+            Cómo llegar
         </a>
-      </div>
+    </div>
+    </section>
+    
+    <!-- CONTACTO -->
+    <section class="contacto hidden" id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
     </section>
 
     <footer class="footer">
-      <p>
-        © 2024 Cervecería Restaurante Parada y Fonda. Todos los derechos
-        reservados.
-      </p>
+        <p>&copy; <span id="year"></span> Cervecería Restaurante Parada y Fonda. Todos los derechos reservados.</p>
     </footer>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>

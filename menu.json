@@ -1,0 +1,146 @@
+{
+  "menuDiario": {
+    "precio": "14,50€",
+    "descripcion": "Platos frescos y de temporada, perfectos para tu día a día. Incluye primer plato, segundo plato, postre o café y bebida.",
+    "primeros": [
+      {
+        "nombre": "Ensalada César con pollo crujiente",
+        "descripcion": "Lechuga, pollo, picatostes, parmesano y salsa César."
+      },
+      {
+        "nombre": "Gazpacho Andaluz",
+        "descripcion": "Sopa fría de tomate y verduras frescas."
+      },
+      {
+        "nombre": "Lentejas a la jardinera",
+        "descripcion": "Guiso tradicional con verduras de temporada."
+      }
+    ],
+    "segundos": [
+      {
+        "nombre": "Pescado del día a la plancha",
+        "descripcion": "Acompañado de verduras al vapor."
+      },
+      {
+        "nombre": "Secreto ibérico con patatas",
+        "descripcion": "Carne de cerdo ibérico a la brasa con guarnición."
+      },
+      {
+        "nombre": "Arroz negro con calamares",
+        "descripcion": "Arroz cremoso con tinta de calamar y alioli."
+      }
+    ],
+    "postres": "Tarta de queso casera, Fruta de temporada, o Café",
+    "bebida": "Bebida incluida: agua, refresco o copa de vino."
+  },
+  "carta": [
+    {
+      "categoria": "Entrantes",
+      "platos": [
+        {
+          "nombre": "Ensalada Mediterránea",
+          "precio": "10,00 €"
+        },
+        {
+          "nombre": "Croquetas caseras (6 uds)",
+          "precio": "8,00 €"
+        },
+        {
+          "nombre": "Jamón ibérico",
+          "precio": "20,00 €"
+        },
+        {
+          "nombre": "Tabla de quesos",
+          "precio": "14,00 €"
+        },
+        {
+          "nombre": "Patatas bravas",
+          "precio": "8,00 €"
+        }
+      ]
+    },
+    {
+      "categoria": "Platos Principales",
+      "platos": [
+        {
+          "nombre": "Paella de marisco",
+          "precio": "18,00 €"
+        },
+        {
+          "nombre": "Solomillo a la parrilla",
+          "precio": "21,00 €"
+        },
+        {
+          "nombre": "Chuletas de cordero",
+          "precio": "19,00 €"
+        },
+        {
+          "nombre": "Merluza en salsa verde",
+          "precio": "18,00 €"
+        },
+        {
+          "nombre": "Secreto ibérico",
+          "precio": "19,00 €"
+        },
+        {
+          "nombre": "Bacalao al pil-pil",
+          "precio": "20,00 €"
+        }
+      ]
+    },
+    {
+      "categoria": "Postres",
+      "platos": [
+        {
+          "nombre": "Tarta de queso",
+          "precio": "7,00 €"
+        },
+        {
+          "nombre": "Flan casero",
+          "precio": "5,00 €"
+        },
+        {
+          "nombre": "Natillas con galleta",
+          "precio": "5,00 €"
+        },
+        {
+          "nombre": "Helado (3 bolas)",
+          "precio": "6,00 €"
+        },
+        {
+          "nombre": "Tarta de Santiago",
+          "precio": "7,00 €"
+        }
+      ]
+    },
+    {
+      "categoria": "Bebidas",
+      "platos": [
+        {
+          "nombre": "Cerveza (caña)",
+          "precio": "3,00 €"
+        },
+        {
+          "nombre": "Vino tinto (copa)",
+          "precio": "3,00 €"
+        },
+        {
+          "nombre": "Vino blanco (copa)",
+          "precio": "3,00 €"
+        },
+        {
+          "nombre": "Refresco",
+          "precio": "3,00 €"
+        },
+        {
+          "nombre": "Agua mineral",
+          "precio": "2,00 €"
+        },
+        {
+          "nombre": "Café",
+          "precio": "2,00 €"
+        }
+      ]
+    }
+  ]
+}
