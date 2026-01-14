@@ -1,25 +1,25 @@
 /* VARIABLES */
 :root {
-    --primary: #d44211;
-    --bg: #f8f6f6;
-    --text: #1b110d;
-    --text-muted: #9a5f4c;
-    --border: #e7d5cf;
+  --primary: #d44211;
+  --bg: #f8f6f6;
+  --text: #1b110d;
+  --text-muted: #9a5f4c;
+  --border: #e7d5cf;
 }
 
 body.dark {
-    --bg: #221510;
-    --text: #fcf9f8;
-    --text-muted: #b0a19c;
-    --border: #4a3b36;
+  --bg: #221510;
+  --text: #fcf9f8;
+  --text-muted: #b0a19c;
+  --border: #4a3b36;
 }
 
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .hidden {
@@ -28,8 +28,8 @@ body.dark {
 
 
 body {
-    background: var(--bg);
-    color: var(--text);
+  background: var(--bg);
+  color: var(--text);
 }
 
 /* ESTILOS DE CONTENEDOR GENERAL */

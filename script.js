@@ -4,8 +4,8 @@ const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
 toggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    toggleButton.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+  body.classList.toggle("dark");
+  toggleButton.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
 menuToggle.addEventListener("click", () => {
